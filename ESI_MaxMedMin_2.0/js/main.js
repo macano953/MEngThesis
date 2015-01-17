@@ -139,7 +139,7 @@
 				$.ajax({
 					async:true, 
 					type:"GET", 
-					url: 'http://topdigitalsensors.hol.es/carpeta/graph_select.php?grafica=2&ID='+ID+'&parametro='+parametro+'&days='+days, 
+					url: 'http://*******.es/carpeta/graph_select.php?grafica=2&ID='+ID+'&parametro='+parametro+'&days='+days, 
 					success: function (datos){
 							var columna1=[];
 							var columna2=[];
