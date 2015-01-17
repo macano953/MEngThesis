@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+    <Catalog.ResourceDescription>
+        <Vendor>ESI</Vendor>
+        <Name>Sensors-inspector</Name>
+        <DisplayName>Sensors Inspector</DisplayName>
+        <Version>1.0</Version>
+        <Author>Miguel Ángel Caño</Author>
+        <Mail>miguel.cano@topdigital.es</Mail>
+        <Description>This widget allows you to explore the information about sensors deployed.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+    </Catalog.ResourceDescription>
+	 
+    <Platform.Preferences>
+    </Platform.Preferences>
+	
+    <Platform.StateProperties>
+    </Platform.StateProperties>
+    <Platform.Wiring>
+        <InputEndpoint
+            name="entityInput"
+            type="text"
+            description="Entities"
+            label="Entity"
+            action_label="entityInput"
+            friendcode="entity"/>
+    </Platform.Wiring>
+    <Platform.Link>
+        <XHTML content-type="application/xhtml+xml" use-platform-style="true" href="entities-inspector.html"/>
+    </Platform.Link>
+
+    <Platform.Rendering height="40" width="20"/>
+</Template>

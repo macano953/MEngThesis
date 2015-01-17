@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+
+    <Catalog.ResourceDescription>
+        <Vendor>ESI</Vendor>
+        <Name>Ult_lecturas_ESI</Name>
+        <Version>1.1</Version>
+        <DisplayName>Last readings</DisplayName>
+        <Author>MiguelCano</Author>
+        <Mail>miguel.cano@topdigital.es</Mail>
+        <Description>Grafica de una medida.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <WikiURI>doc/index.html</WikiURI>
+    </Catalog.ResourceDescription>
+
+    <Platform.Preferences>
+		<Preference
+            name="parameter"
+            type="text"
+            description="Condition: parameter"
+            label="Parameter"
+            default="CO2">
+        </Preference>
+		<Preference
+            name="number_readings"
+            type="text"
+            description="Number of readings"
+            label="Number of readings"
+            default="15">
+        </Preference>
+		<Preference
+            name="ID"
+            type="text"
+            description="Sensor node identification"
+            label="ID"
+            default="387248748">
+        </Preference>
+        <Preference
+            name="color_relleno"
+            type="text"
+            description="Stroke-RGB"
+            label="Stroke-color"
+            default="151,187,205,1">
+        </Preference>
+        <Preference
+            name="color_trazo"
+            type="text"
+            description="Fill-color"
+            label="Fill-color"
+            default="51,127,105,0.2">
+        </Preference>
+        <Preference
+            name="color_punto"
+            type="text"
+            description="Point-color"
+            label="Point-color"
+            default="151,187,205,1">
+        </Preference>
+    </Platform.Preferences>
+
+    <Platform.Wiring>
+        <InputEndpoint
+            name="entityInput"
+            type="text"
+            description="Entities"
+            label="Entity"
+            action_label="entity"
+            friendcode="entity"/>
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html" use-platform-style="true"/>
+
+    </Platform.Link>
+
+    <Platform.Rendering width="8" height="32"/>
+
+</Template>
