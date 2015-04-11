@@ -56,6 +56,8 @@ if($grafica == 3){
 	$grafica = array(json_encode($resultado[0]),json_encode($resultado[1]));
 	echo json_encode($grafica);
 }
+
+mysqli_close($link);
 	/*$meses=array('Meses','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
 	$i = 0;
 	$consuta_registro="SELECT fecha_alta, count(*) as totalFechas, MONTH(fecha_alta) as mes FROM usuarios WHERE YEAR(fecha_alta) = '".date('Y')."' GROUP BY MONTH(fecha_alta)";
