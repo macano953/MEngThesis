@@ -10,7 +10,7 @@ $operator=$_POST['operator'];
 $value=$_POST['value'];
 $email=$_POST['email'];
 $notification=$_POST['notification'];
-$email_from = "alerts@gas-fiware.com";
+$email_from = "fiware-alerts@topdigitalsensors2.hol.es";
 
 if($notification == 1){
 	$message = new \Esendex\Model\DispatchMessage(
