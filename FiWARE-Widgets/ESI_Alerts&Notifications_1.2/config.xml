@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+    <Catalog.ResourceDescription>
+        <Vendor>ESI</Vendor>
+        <Name>Alerts &#038; Notifications</Name>
+        <DisplayName>Alerts &#038; Notifications</DisplayName>
+        <Version>1.2</Version>
+	    <Author>MiguelCaño</Author>
+        <Mail>macanroj@gmail.com</Mail>
+        <Description>Generic widget that sends an sms/email when an emergency occurs in a node.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI>images/cataloguePhone.png</iPhoneImageURI>
+    </Catalog.ResourceDescription>
+    <Platform.Preferences>
+        <Preference
+            name="phone_number"
+            type="text"
+            description="Receiver phone number"
+            label="Phone number"
+            default="686337325">
+        </Preference>        
+        <Preference
+            name="email"
+            type="text"
+            description="E-mail Address"
+            label="E-mail Address"
+            default="macanroj@gmail.com">
+        </Preference>
+        <Preference name="notification" type="list" description="Notification type" label="Notification type" default="0">
+            <Option value="0" name="Email"/>
+            <Option value="1" name="SMS"/>
+        </Preference>
+         <Preference
+            name="parameter"
+            type="text"
+            description="Condition: parameter"
+            label="Parameter"
+            default="CO2">
+        </Preference>
+        <Preference
+            name="operator"
+            type="text"
+            description="Condition: operator"
+            label="Operator"
+            default=">">
+        </Preference>
+        <Preference
+            name="value"
+            type="text"
+            description="Condition: value"
+            label="Value"
+            default="350">
+        </Preference>
+     </Platform.Preferences>
+    <Platform.StateProperties>
+    </Platform.StateProperties>
+    <Platform.Wiring>
+        <InputEndpoint
+            name="entityInput"
+            type="text"
+            description="Entities"
+            label="Entity"
+            action_label="entity"
+            friendcode="entity"/>
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML
+            href="index.html"
+            contenttype="text/html"
+            cacheable="false"
+            use-platform-style="false"/>
+    </Platform.Link>
+
+    <Platform.Rendering width="4" height="16"/>
+</Template>

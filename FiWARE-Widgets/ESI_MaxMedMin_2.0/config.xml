@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+
+    <Catalog.ResourceDescription>
+        <Vendor>ESI</Vendor>
+        <Name>MaxMedMin</Name>
+        <Version>2.0</Version>
+        <DisplayName>Max-Med-Min</DisplayName>
+        <Author>MiguelCaño</Author>
+        <Mail>macanroj@gmail.com</Mail>
+        <Description>Maximum, medium and minimum values of gas sensors</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <WikiURI>doc/index.html</WikiURI>
+    </Catalog.ResourceDescription>
+
+    <Platform.Preferences>
+        <Preference name="NameOfGraph" type="text" description="Set here the name of the graph" label="Name of graph"  default="CO2" />
+    	<Preference name="Parameter" type="text" description="Parameter key of the graph information" label="Parameter"  default="CO2" />
+    	<Preference name="Color-min" type="text" description="Set here the color of the graph" label="Color-min"  default="121,173,196" />
+		<Preference name="Color-med" type="text" description="Set here the color of the graph" label="Color-med"  default="221,73,126" />
+    	<Preference name="Color-max" type="text" description="Set here the color of the graph" label="Color-max"  default="151,123,96" />
+		<Preference name="ID" type="text" description="Sensor ID" label="Sensor ID"  default="387248748" />
+		<Preference name="days" type="text" description="Number of days to look at" label="Days" default="7" />
+    </Platform.Preferences>
+	<Platform.Wiring>
+        <InputEndpoint
+            name="entityInput"
+            type="text"
+            description="Entities"
+            label="Entity"
+            action_label="entity"
+            friendcode="entity"/>
+    </Platform.Wiring>
+    <Platform.Link>
+        <XHTML href="index.html" use-platform-style="true"/>
+
+    </Platform.Link>
+
+    <Platform.Rendering width="8" height="32"/>
+
+</Template>

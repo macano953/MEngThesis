@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <title>SMSAlerts</title>
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/sendsms.js"></script>
+    </head>
+	<body>
+    <img src="images/smswidget.png" vspace="20" hspace="90" alt=""/>
+    <div id="info" style="display: block; width:60%; margin-left: 90px; margin-top: 0px; text-align: center;" class="alert alert-info">¡Nada que notificar!</div>  
+<div id="sms_success" style="display: none; width:60%; margin-left: 90px; margin-top: 0px; text-align: center;" class="alert alert-success">Alerta detectada: SMS enviado.</div>
+<div id="email_success" style="display: none; width:60%; margin-left: 90px; margin-top: 0px; text-align: center;" class="alert alert-success">Alerta detectada: e-mail enviado.</div>
+<div id="email_failure" style="display: none; width:60%; margin-left: 90px; margin-top: 0px; text-align: center;" class="alert alert-danger">Alerta detectada: error en envío de e-mail.</div>
+    </body>
+</html>
